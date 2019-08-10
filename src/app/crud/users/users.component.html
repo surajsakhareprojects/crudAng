@@ -1,0 +1,22 @@
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Serial No.</th>
+        <th>Id</th>
+        <th>Firstname</th>
+       
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of usersInfo; let i = index">
+        <td>{{i}}</td>
+        <td>{{user.id}}</td>
+        <td>{{user.fName}}</td>
+     
+        <td><a routerLink="/userprofile/{{user.id}}">View Details</a></td>
+      </tr>
+    </tbody>
+  </table>
+  <div>
+    <a class="btn btn-success" routerLink="/newuser/">Create New User</a>
+  </div>

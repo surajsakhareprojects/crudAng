@@ -1,0 +1,29 @@
+<div class="container">
+        <div class="col-md-4"></div>
+        <div class="col-md-4 login-container">
+            <h4> Create New User  </h4>
+          <form #newUser="ngForm" (ngSubmit)="submitform(newUser.value)">
+            <div class="form-group">
+            First Name ::
+              <input type="text" class="form-control" name="fName" ngModel>
+            </div>
+            <div class="form-group">
+              Last Name ::
+              <input type="text" class="form-control" name="lName" ngModel>
+            </div>
+            <div class="form-group">
+              Email ::
+              <input type="text" class="form-control" name="email" ngModel>
+            </div>
+            <div class="form-group">
+              Age ::
+              <input type="text" class="form-control" name="age" ngModel>
+            </div>
+            
+            <br />
+            <br />
+            <input type="submit" value="Create New User" class="btn btn-success">
+          </form>
+        </div>
+        <div class="col-md-4"></div>
+        </div>
